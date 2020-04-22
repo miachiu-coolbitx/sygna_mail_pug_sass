@@ -1,0 +1,93 @@
+extends ../layouts/wide-layout.pug
+
+block title
+    title Create Notification
+
+block content
+    div.container 
+        div#main
+            div.intro 
+                h2.title Information Received
+                p.text Hello, 
+                    br
+                    |  Thanks for your time register in Sygna Bridge.
+                    br
+                    |  This is a copy of information you have registered:
+                    br
+                    |  We will inform you once the registration is approved.
+
+            //- INFO table
+            div.info 
+                //- Company Name
+                div.section
+                    div.title 
+                        h3 Company Name
+                    div.content
+                        span {Company Name}
+
+                //- VASP Code Name
+                div.section
+                    div.title 
+                        h3 VASP Code Name
+                    div.content
+                        span {VASP Code Name}
+
+                //- Country Code
+                div.section
+                    div.title 
+                        h3 Country Code
+                    div.content
+                        span {Country Code}
+
+                //- City Code
+                div.section 
+                    div.title 
+                        h3 City Code
+                    div.content
+                        span {City Code}
+
+                //- VASP Category
+                div.section
+                    div.title 
+                        h3 VASP Category
+                    div.content
+                        span {VASP Category}
+
+                //- Beneficiary VASP API endpoint URL
+                div.section
+                    div.title 
+                        h3 Beneficiary VASP API endpoint URL
+                    div.content
+                        span {Beneficiary VASP API endpoint URL}
+
+                //- Fixed static IP Address
+                div.section
+                    div.title 
+                        h3 Fixed static IP Address
+                    div.content
+                        span {Fixed static IP Address}
+
+                //- VASP Public Key
+                div.section
+                    div.title 
+                        h3 VASP Public Key
+                    div.content
+                        span {VASP Public Key}
+
+                //- Go-Live Time
+                div.section
+                    div.title 
+                        h3 Go-Live Time
+                    div.content
+                        span {2020-03-11T00:24:00Z}
+
+
+            div.cta_block
+                include ../partials/contacts2.pug
+
+                block prepend contacts
+                    <div class="cta">
+                        <a href="http://sygna.io/" class="btn btn-primary" target="_blank" title="http://sygna.io/">
+                            <span>For More Information, Visit Us At Sygna.Io</span>
+                        </a>
+                    </div>

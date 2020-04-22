@@ -1,0 +1,23 @@
+extends ../layouts/narrow-layout.pug
+
+block title
+    title VASP Registration
+    
+block content
+    div.container 
+        div#main
+            div.intro 
+                h2.title Start Your Sygna Bridge Service
+                p.text Hello, 
+                br
+                |  Thanks for your interest in Sygna Bridge. We are here to help you stay compliant in the easiest way. Please register your information in the following link.
+
+            div.cta_block
+                block prepend contacts
+                    <div class="cta">
+                        <a href="#" class="btn btn-primary" target="_blank" title="{one time registration link}">
+                            <span>registration link</span>
+                        </a>
+                    </div>
+
+                include ../partials/contacts.pug

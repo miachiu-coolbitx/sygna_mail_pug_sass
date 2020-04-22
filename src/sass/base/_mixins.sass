@@ -1,0 +1,45 @@
+/* src/assets/styles/utils/_mixins.scss  */
+
+@mixin transition($transition) 
+  -webkit-transition: $transition
+  -moz-transition: $transition
+  -o-transition: $transition
+  transition: $transition
+
+
+@mixin transform($transforms) 
+  -moz-transform: $transforms
+  -o-transform: $transforms
+  -ms-transform: $transforms
+  -webkit-transform: $transforms
+  transform: $transforms
+
+
+@mixin translate3d($x, $y, $z) 
+  -webkit-transform: translate3d($x, $y, $z)
+  -moz-transform: translate3d($x, $y, $z)
+  -o-transform: translate3d($x, $y, $z)
+  transform: translate3d($x, $y, $z)
+
+
+@mixin border-radius($radius) 
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  border-radius: $radius
+
+
+@mixin isFlex($align: center, $justify: center, $direction: row, $wrap: wrap) 
+  display: flex
+  align-items: $align
+  justify-content: $justify
+  flex-direction: $direction
+  flex-wrap: $wrap
+
+
+@mixin bgImage($url, $repeat: no-repeat, $position: center, $size: initial) 
+  background-image: url($url)
+  background-repeat: $repeat
+  background-position: $position
+  background-size: $size
+

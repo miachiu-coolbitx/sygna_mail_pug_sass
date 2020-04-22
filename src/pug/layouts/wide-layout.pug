@@ -1,0 +1,10 @@
+extends ../base/base.pug
+
+block css
+  link(href="./assets/css/styles2.min.css", rel="stylesheet")
+
+block layout
+  .container_wide
+    include ../partials/header.pug
+    block content
+    include ../partials/footer.pug

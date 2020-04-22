@@ -1,0 +1,60 @@
+.container_wide, .container_wide .container 
+  @media (min-width: $screen-xs)
+    max-width: 595px
+
+.container_wide
+  #header
+    .logo
+      max-width: 241px
+
+#main 
+    .info 
+        padding: 30px
+        margin-bottom: 20px
+        border: solid 1px $main-color
+        .section 
+            padding: 15px 0
+            border-bottom: 1px solid $g-blue
+            &:first-of-type
+                padding-top: 0
+            &:last-of-type
+                padding-bottom: 0
+                border: none
+                
+            .title 
+                margin-bottom: 10px
+                h3 
+                    margin-bottom: 0
+                    color: $title
+                    font-size: 16px
+                    font-weight: 600
+                    
+                span 
+                    font-size: 12px
+                    color: $l-gray
+                    word-break: break-all
+                    font-family: $font-o
+                    font-weight: normal
+                
+            .content 
+                text-align: center !important
+                color: $black !important
+                font-size: 14px !important
+                font-weight: normal !important
+                .copytxt 
+                    display: inline-block
+                    width: 100%
+                    height: 100% !important
+                    padding: 5px 10px
+                    border: 1px solid $blue !important
+                    background: $l-blue !important
+                    word-break: break-all
+                    text-align: center
+                    
+                .d-block 
+                    display: block
+
+    .cta_block 
+        .text 
+            margin-bottom: 20px
+      

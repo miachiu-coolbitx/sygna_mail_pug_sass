@@ -1,0 +1,20 @@
+extends ../layouts/narrow-layout.pug
+
+block title
+    title Account Manager Delete
+
+block content
+    div.container 
+        div#main
+            div.intro 
+                h2.title Registration Deleted
+                p.text Hello, 
+                br
+                |  We are sorry and would like to inform you that the registration of {vasp code} is deleted.
+                br
+                |  The reason behind this is:
+                br
+                span.reject_reason {reject reason from account manager}
+
+            div.cta_block
+                include ../partials/contacts.pug

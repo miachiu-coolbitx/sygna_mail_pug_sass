@@ -1,0 +1,74 @@
+extends ../layouts/wide-layout.pug
+
+block title
+    title Registration Success
+
+block content
+    div.container 
+        div#main
+            div.intro 
+                h2.title Welcome to Sygna Bridge Service
+                p.text Hello, 
+                    br
+                    |  It's great to have you onboard the Sygna Bridge platform. You can find registration information below.
+
+            //- INFO table
+            div.info 
+                //- API Key
+                div.section.first 
+                    div.title 
+                        h3 Your API Key
+                        span Authentication Key to Bridge Server.
+                    div.content
+                        span.copytxt#api_key {Your API Key}
+
+                //- VASP Code
+                div.section
+                    div.title 
+                        h3 VASP Code
+                        span Public identification consists of 8 letters to 11 letters
+                    div.content
+                        span {VASP Code}
+
+                //- Bridge Public Key
+                div.section
+                    div.title 
+                        h3 Bridge Public Key
+                        span To verify the Sygna Bridge signature from the API ‘GET Bridge/VASP’
+                    div.content
+                        span.copytxt {Bridge Public Key}
+
+                //- Bridge Test API domain
+                div.section 
+                    div.title 
+                        h3 Bridge Test API domain
+                        span API domain for test and integration only
+                    div.content
+                        span {Bridge Test API domain}
+
+                //- Static IP
+                div.section
+                    div.title 
+                        h3 Static IP from Bridge
+                        span For secure communication to VASP server
+                    div.content
+                        span.d-block {Static IP 1 from Bridge}
+                        span.d-block {Static IP 2 from Bridge}
+
+                //- Go-live Date
+                div.section.last 
+                    div.title 
+                        h3 Go-live Date
+                        span Your assigned date to Go-live with Sygna Bridge.
+                    div.content
+                        span {2020-03-11T00:24:00Z}
+
+            div.cta_block
+                include ../partials/contacts2.pug
+
+                block prepend contacts
+                    <div class="cta">
+                        <a href="http://sygna.io/" class="btn btn-primary" target="_blank" title="http://sygna.io/">
+                            <span>For More Information, Visit Us At Sygna.Io</span>
+                        </a>
+                    </div>

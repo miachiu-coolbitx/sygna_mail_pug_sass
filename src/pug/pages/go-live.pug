@@ -1,0 +1,17 @@
+extends ../layouts/narrow-layout.pug
+
+block title
+  title Go-live
+
+block content
+  div.container 
+    div#main
+      div.intro 
+        h2.title You are live with Sygna Bridge
+        p.text Hello, 
+          br
+          br
+          span {Vasp code}
+          |  is now live in Sygna Bridge server.
+      div.cta_block
+        include ../partials/contacts.pug

@@ -1,0 +1,30 @@
+extends ../layouts/narrow-layout.pug
+
+block title
+    title Approver Return
+
+block content
+    div.container 
+        div#main
+            div.intro 
+                h2.title VASP Rejected
+                p.text Hello, 
+                br
+                |  We are sorry and would like to inform you that the registration of {vasp code} is failed.
+                br
+                |  The reason behind this is:
+                br
+                span.reject_reason {reject reason from account approver}
+                br
+                br
+                |  Please update your registration information and resubmit in the following link.
+
+            div.cta_block
+                block prepend contacts
+                    <div class="cta">
+                        <a href="#" class="btn btn-primary" target="_blank" title="{one time registration link}">
+                            <span>registration link</span>
+                        </a>
+                    </div>
+
+                include ../partials/contacts.pug
